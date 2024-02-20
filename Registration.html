@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru  ">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacte</title>
+	<link rel="stylesheet" href="./.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="" alt="">
+		</div>
+		<div class="nav">
+			<ul class="navigation">
+				<li><a href="#">ПРО ФИРМУ</a></li>
+				<li><a href="#">КАК КУПИТЬ/</a></li>
+				<li><a href="#">АУКЦИОНЫ</a></li>
+				<li><a href="#">ОБЪЯВЛЕНИЯ</a></li>
+				<li><a href="#">КОНТАКТ
+				</a></li>
+				<li><a href="#">ВОЙТИ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+<h3 class='titlu-registration'>REJESTRACJA NOWEGO UŻYTKOWNIKA</h3>
+<p class='text-registration'>Aby uzyskać pełny dostęp do zasobów AutaZeSzwajcarii.pl i składać oferty na aukcjach, uzupełnij wymagane dane i zaakceptuj formularz. Otrzymasz e-mail z regulaminem serwisu i dane do przelewu nieoprocentowanej kaucji zwrotnej - wymaganej do aktywacji konta.
+</p>
+
+<div class="registration-form">
+	<form action="/register" method="post">
+		<label for="first-name">Pierwsze imię:</label>
+		<input type="text" id="first-name" name="first-name" required>
+
+		<label for="second-name">Drugie imię:</label>
+		<input type="text" id="second-name" name="second-name">
+
+		<label for="surname">Nazwisko:</label>
+		<input type="text" id="surname" name="surname" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Hasło:</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="confirm-password">Powtórz Hasło:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required>
+
+		<label for="phone">Telefon:</label>
+		<input type="text" id="phone" name="phone">
+
+		<label for="country">Kraj zamieszkania:</label>
+		<input type="text" id="country" name="country">
+
+		<label for="city">Miejscowość:</label>
+		<input type="text" id="city" name="city">
+
+		<label for="postal-code">Kod pocztowy:</label>
+		<input type="text" id="postal-code" name="postal-code" pattern="\d{2}-\d{3}" placeholder="00-000">
+
+		<label for="street">Ulica:</label>
+		<input type="text" id="street" name="street">
+
+		<label for="apartment-number">Numer mieszkania:</label>
+		<input type="text" id="apartment-number" name="apartment-number">
+
+		<label for="referral-code">Kod polecenia:</label>
+		<input type="text" id="referral-code" name="referral-code">
+
+		<label for="language">Język użytkownika:</label>
+		<select id="language" name="language">
+				<option value="pl">Polski</option>
+				<option value="pl">Romania</option>
+				<option value="pl">Russia</option>
+				<option value="pl">Bulgarian</option>
+				<!-- Add other language options here -->
+		</select>
+
+		<input type="checkbox" id="terms" name="terms" required>
+		<label for="terms">Akceptuję warunki korzystania z serwisu i politykę prywatności danych</label>
+
+		<input type="submit" value="Zarejestruj">
+</form>
+</div>
+</div>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-pravaci">
+				<p><a href="">Regulamin serwisu</a></p>
+				<p><a href="">Polityka prywatności</a></p>
+			</div>
+			<div class="footer-copyright">
+				<p>COPYRIGHT © 2022 AUTAZESZWAJCARII.PL, GALERIA OTWOCK GRAFFITI RADOSŁAW GALAS, NIP: 5321704084</p>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

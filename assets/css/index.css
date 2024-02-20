@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+}
+
+.container {
+	max-width: 1240px;
+	padding: 0px 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* Header */
+header {
+	background-color: #282828;
+	height: 70px;
+}
+
+.logo-img {
+	height: 50px;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.navigation {
+	display: flex;
+	gap: 10px;
+}
+
+.navigation a {
+	color: #fff;
+}
+/* Header */
+/* ---------- */
+/* ---------- */
+
+/* ---------- */
+/* ---------- */
+/* ResetPassword */
+.resetPassword {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.titlu-resetPassword {
+	padding: 26px 0 20px;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+}
+
+.titlu-resetPassword hr {
+	border: 0;
+	border-top: 1px solid #eee;
+	margin-top: 14px;
+}
+
+.resetPassword-form form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 7px;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.resetPassword-form label {
+	font-weight: 600;
+}
+
+.resetPassword-form input {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 13px;
+	line-height: 1.4px;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	/* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+	/* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s,
+		-webkit-box-shadow ease-in-out 0.15s;
+	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; */
+}
+
+.resetPassword-form input:focus {
+	box-shadow: none;
+	outline: 0;
+	/* background-color: #b5b5b6; */
+	/* border-color: #66afe9; */
+	/* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+		0 0 8px rgba(102, 175, 233, 0.6); */
+	/* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+		0 0 8px rgba(102, 175, 233, 0.6); */
+}
+
+.resetPassword-form button {
+	cursor: pointer;
+	padding: 8px 13px;
+	margin-top: 20px;
+	margin-left: auto;
+	line-height: 20px;
+	color: #fff;
+	box-sizing: border-box;
+	border: 1px solid rgb(217, 83, 79);
+	border-radius: 4px;
+	background: rgb(177, 3, 3);
+}
+
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* Footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #282828;
+}
+
+.footer-content {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	font-size: 9px;
+}
+
+.footer-pravaci {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.footer-pravaci a {
+	color: #fff;
+}
+
+.footer-pravaci a:hover {
+	text-decoration: underline;
+}
+
+.footer-copyright {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* Page firma */
+.img-compani {
+	margin-top: 40px;
+	height: 229px;
+	width: 100%;
+}
+
+.titlu-firma {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 400;
+	color: #282828;
+}
+
+.titlu-firma hr {
+	max-width: 40px;
+	color: #b10303;
+	border: 1px solid #b10303;
+	padding: 0;
+	margin: 6px auto;
+}
+
+.content-firma {
+	margin-top: 30px;
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 13px;
+	color: #282828;
+}
+
+.content-firma p {
+	padding: 10px 50px 15px 40px;
+}
+
+.content-firma__important {
+	color: #ac0303;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+	.navigation {
+		display: none;
+	}
+}
