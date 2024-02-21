@@ -4,36 +4,43 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contacte</title>
-		<link rel="stylesheet" href="./.css" />
+		<link rel="stylesheet" href="/assets/css/index.css" />
 	</head>
 	<body>
-		<div class="header">
-			<div class="logo">
-				<img src="" alt="" />
+		<header>
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<img class="logo-img" src="/assets/img/logo.png" alt="Logo" />
+					</div>
+					<div class="nav">
+						<ul class="navigation">
+							<li><a href="#">ПРО ФИРМУ</a></li>
+							<li><a href="#">КАК КУПИТЬ</a></li>
+							<li><a href="#">АУКЦИОНЫ</a></li>
+							<li><a href="#">ОБЪЯВЛЕНИЯ</a></li>
+							<li><a href="#">КОНТАКТ </a></li>
+							<li><a href="#">ВОЙТИ</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="nav">
-				<ul class="navigation">
-					<li><a href="#">ПРО ФИРМУ</a></li>
-					<li><a href="#">КАК КУПИТЬ/</a></li>
-					<li><a href="#">АУКЦИОНЫ</a></li>
-					<li><a href="#">ОБЪЯВЛЕНИЯ</a></li>
-					<li><a href="#">КОНТАКТ </a></li>
-					<li><a href="#">ВОЙТИ</a></li>
-				</ul>
-			</div>
-		</div>
+		</header>
+
 		<div class="container">
-			<h3 class="titlu-contacts">ПАНЕЛЬ ВХОДА</h3>
+			<h3 class="titlu-user titlu-contacts">
+				ПАНЕЛЬ ВХОДА
+				<hr class="titlu-hr" />
+			</h3>
 			<div class="content-login">
 				<div class="login-info">
-					<p>Еще нету счета?</p>
-					<p><a href="">Узнай больше! </a></p>
-					<p><a href="">напомнить пароль</a></p>
+					Еще нету счета?
+					<a href="">Узнай больше! </a>
+					<a href="">напомнить пароль</a>
 				</div>
 
-				<div class="login-form">
-					<form action="/login" method="post">
-						<!-- Update the action with your login processing script -->
+				<div class="user-form login-form">
+					<form method="post">
 						<label for="username">Название пользователя/Email</label>
 						<input
 							type="text"
@@ -57,16 +64,21 @@
 			</div>
 		</div>
 
-		<!-- <footer class="footer">
-		<div class="footer-content">
-			<div class="footer-pravaci">
-				<p><a href="">Regulamin serwisu</a></p>
-				<p><a href="">Polityka prywatności</a></p>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-pravaci">
+						<p><a href="">Regulamin serwisu</a></p>
+						<p><a href="">Polityka prywatności</a></p>
+					</div>
+					<div class="footer-copyright">
+						<p>
+							COPYRIGHT © 2022 AUTAZESZWAJCARII.PL, GALERIA OTWOCK GRAFFITI
+							RADOSŁAW GALAS, NIP: 5321704084
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="footer-copyright">
-				<p>COPYRIGHT © 2022 AUTAZESZWAJCARII.PL, GALERIA OTWOCK GRAFFITI RADOSŁAW GALAS, NIP: 5321704084</p>
-			</div>
-		</div>
-	</footer> -->
+		</footer>
 	</body>
 </html>

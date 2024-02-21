@@ -82,7 +82,7 @@ header {
 	margin-top: 14px;
 }
 
-.resetPassword-form form {
+.user-form form {
 	display: flex;
 	flex-direction: column;
 	padding-top: 7px;
@@ -90,11 +90,11 @@ header {
 	margin: 0 auto;
 }
 
-.resetPassword-form label {
+.user-form label {
 	font-weight: 600;
 }
 
-.resetPassword-form input {
+.user-form input {
 	display: block;
 	width: 100%;
 	height: 34px;
@@ -114,7 +114,7 @@ header {
 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; */
 }
 
-.resetPassword-form input:focus {
+.user-form input:focus {
 	box-shadow: none;
 	outline: 0;
 	/* background-color: #b5b5b6; */
@@ -125,7 +125,7 @@ header {
 		0 0 8px rgba(102, 175, 233, 0.6); */
 }
 
-.resetPassword-form button {
+.user-form button {
 	cursor: pointer;
 	padding: 8px 13px;
 	margin-top: 20px;
@@ -193,7 +193,7 @@ footer {
 	color: #282828;
 }
 
-.titlu-firma hr {
+.titlu-hr {
 	max-width: 40px;
 	color: #b10303;
 	border: 1px solid #b10303;
@@ -219,6 +219,41 @@ footer {
 	margin-bottom: 0;
 	font-weight: bold;
 	font-size: 13px;
+}
+
+/* Page login */
+.titlu-user {
+	padding: 26px 0 20px;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+}
+
+.login-info {
+	max-width: 1000px;
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	padding: 15px;
+	margin: 25px auto;
+	border: 1px solid #faebcc;
+	border-radius: 4px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.login-info a {
+	color: #ac0303;
+}
+
+.login-info a:hover {
+	text-decoration: underline;
+}
+
+.login-form input + label {
+	margin-top: 15px;
 }
 
 @media screen and (max-width: 1000px) {
