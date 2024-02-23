@@ -485,6 +485,7 @@ footer {
 	align-items: center;
 	max-width: 1000px;
 	margin: 0 auto;
+	gap: 40px;
 }
 
 .search-form form {
@@ -498,6 +499,11 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+}
+
+.group-search label {
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .input-group {
@@ -584,6 +590,131 @@ footer {
 	top: 35%;
 	right: -30px;
 	transform: translate(0%, -50%);
+}
+
+.carousel-car {
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.carousel-car:not(:first-child) {
+	display: none;
+}
+
+.content-cars {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.content-cars h2 {
+	font-weight: normal;
+}
+
+.content-car {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-bottom: 100px;
+}
+
+.car-item {
+	width: 100%;
+	background-color: #eee;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 30px;
+	height: 150px;
+}
+
+.car-img {
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.car-item__content {
+	padding: 15px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.car-item__content a {
+	font-size: 18px;
+	color: #282828;
+	padding-bottom: 35px;
+}
+
+.car-item__content p > span {
+	font-weight: bold;
+}
+
+.car-item__more-info {
+	display: flex;
+	gap: 60px;
+}
+
+.car-item__more-info span {
+	font-weight: 700;
+}
+
+.car-auction {
+	padding: 15px 0;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.auction-time {
+	color: #282828;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.auction-time span {
+	font-weight: 700;
+	text-transform: lowercase;
+}
+
+.auction-entry-actions {
+	margin-left: 30px;
+	font-size: 12px;
+	/* padding: 0 0 0 4px; */
+	padding: 0 0 0 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	z-index: 0;
+}
+
+.auction-action-make-offer {
+	font-size: 12px;
+	background-color: #555;
+	border-radius: 8px;
+	position: relative;
+	padding: 10px 0 10px 40px;
+}
+
+.auction-action-make-offer a {
+	bottom: 0;
+	right: -5px;
+	position: absolute;
+	padding: 3px 5px;
+	border-radius: 8px;
+	background-color: #ac0303;
+	font-weight: 700;
+	color: #fff;
+	margin-right: -10px;
+}
+
+.auction-action-make-offer a:hover {
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
