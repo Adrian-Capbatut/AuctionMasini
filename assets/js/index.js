@@ -9,4 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	setInterval(showNextImage, 3000)
+
+	var dropdownToggle = document.getElementById('dropdown-toggle')
+	var dropdownMenu = document.getElementById('dropdown-menu')
+
+	if (dropdownToggle && dropdownMenu) {
+		dropdownToggle.onclick = function () {
+			dropdownMenu.classList.toggle('active')
+		}
+	}
 })
