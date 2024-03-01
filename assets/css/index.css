@@ -890,6 +890,7 @@ footer {
 @media screen and (max-width: 800px) {
 	.burger {
 		display: flex;
+		cursor: pointer;
 	}
 
 	.nav ul {

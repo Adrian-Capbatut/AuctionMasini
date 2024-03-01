@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-	// Aici poți pune codul JS
 	document.querySelector('.burger').addEventListener('click', function () {
 		this.classList.toggle('active')
 		document.querySelector('.navigation').classList.toggle('open')
 	})
+
+	var dropdownToggle = document.getElementById('dropdown-toggle')
+	var dropdownMenu = document.getElementById('dropdown-menu')
+
+	if (dropdownToggle && dropdownMenu) {
+		dropdownToggle.onclick = function () {
+			dropdownMenu.classList.toggle('active')
+		}
+	}
 
 	let carouselCars = document.querySelectorAll('.carousel-car')
 	let currentIndex = 0
@@ -15,13 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	setInterval(showNextImage, 3000)
-
-	var dropdownToggle = document.getElementById('dropdown-toggle')
-	var dropdownMenu = document.getElementById('dropdown-menu')
-
-	if (dropdownToggle && dropdownMenu) {
-		dropdownToggle.onclick = function () {
-			dropdownMenu.classList.toggle('active')
-		}
-	}
 })
