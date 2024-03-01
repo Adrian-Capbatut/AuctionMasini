@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+	// Aici poți pune codul JS
+	document.querySelector('.burger').addEventListener('click', function () {
+		this.classList.toggle('active')
+		document.querySelector('.navigation').classList.toggle('open')
+	})
+
 	let carouselCars = document.querySelectorAll('.carousel-car')
 	let currentIndex = 0
 
